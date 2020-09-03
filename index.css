@@ -46,63 +46,93 @@ a {
 }   
 /* end of reset */
 
-/* take this out when you start to style css */
-
-.header-image {
-    height: 90%;
-    width: 90%;
+body{
+    font-family: 'Roboto Mono', monospace; /* google font*/
+    
 }
-
+/* Top Navbar style */
 .header-nav{
     text-align: center;
     margin-top: 2%;
-    margin
-
 }
+
 .header-nav a{
     display:inline-block;
-    width:100px;
-    padding: 1%;
+    width:120px;
+    padding: .5%;
     border-radius:10px;
-    border:2px solid black;    
+    border:2px solid black; 
+    margin-left: 8%; 
+    margin-right: 8%; 
 }
 
-.title-information-container{
-    margin: 2% 0;
-    border: 1px solid gray; 
+.nav-button-1{
+    background: #FF764E;
+    color: white;
+}
+.nav-button-2{
+    background:#5ED3EB;
+    color: white;
+}
+header .header-nav .nav-button-3, footer .header-nav .nav-button-3 {
+    background:  #FFCD69;
+    color: white;
+    padding-top:2% ;
 }
 
-.header-image-container, .title-information-text {
+/* Title-Information styles */
+
+.title-information-container{   /* this is the main container */
+    margin: 2% 0; 
+}
+
+.title-information-img, .title-information-text-container {
     display: inline-block;
 }
 
-.header-image-container {
+.title-information-img {
     width: 20%;
     margin-left: 7%;
     margin-right: 2%;
     margin-bottom: 2%;
-    border: 1px solid gray;
-
 }
-    
 
-.header-image-container img {
+.title-information-text-container {
+    display: inline-block;
+    text-align: center;
+    width: 55%;
+    height: 70%; /* look here to fix title info */ 
+    vertical-align: top;
+    padding-top: 3%;
+}
+
+.title-information-text-container .item1 {
+    font-family: 'Chelsea Market', cursive;  /* google font*/
+    font-size: 40px;  
+}
+
+.item1 {
+    width: 100%;
+}
+
+.item2, .item3 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.item3 {
+    width: 65%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.header-image {
+    height: 95%;
+    width: 95%;
     border-radius: 50%;
 }
 
-.title-information-text h1 {
-    font-size: 50px;
-}
-
-.title-information-text {
-    text-align: center;
-    border: 1px solid gray;
-    width: 20%;
-    height: 50%; /* look here to fix title info */
-    
-    
-}
-
+/* about section styles  */
 .about-container{
     margin-left: 5%;
     margin-right: 5%;
@@ -110,65 +140,61 @@ a {
     color: white;
     text-align: center;
     font-size: 17px;
-    border: 1px solid gray;
-}
-
-.rules-container{
-    border: 1px solid gray;
 }
 
 .rules {
-    
     text-align: center;
-
+    margin-bottom: 5%;
 }
 
 .rules p{
     width: 20%;
-    border: 1px solid gray;
     margin-left: 40%;
+    font-size: 12px;
 }
 .fire-rule-image {
-    width: 6%;
-    height: 6%;
-    margin-top: 1%;
-    border: 1px solid gray;
+    width: 9%;
+    height: 9%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
-
-.reservation-rule {
-    border: 1px solid gray;
-}
-
-
 
 .reservation-rule-image {
-    width: 6%;
-    height: 6%;
-    margin-top: 3%;
-    border: 1px solid gray;
+    width: 9%;
+    height: 9%;
+    margin-top: 6%;
+    margin-bottom: 2%;
 }
 
 .reservation-rule p {
-    width: 20%
+    width: 20%;
+    margin-top: 5%;
 }
 
-.fire-rule {
-    border: 1px solid gray; 
+.fire-rule { 
     width: 100%;
 }
 .fire-rule p{
     width: 20%;
 }
 
-.footer-image {
-    width: 100%;
-    height: ;
-    
+/* footer styles   */
 
+footer { 
+    width: 100%;  
+    background: #F9E7DC;
 }
-footer {
-    border: 1px solid gray;
-    height: 20vh;
-    
-    
+
+.footer-image {
+    width: 100%; 
+    height: 150px;
+    object-fit:cover;
+    object-position: top;   
 }
+
+footer .header-nav {
+    padding-bottom: 20px;
+}
+
+
+
